@@ -1,6 +1,6 @@
 import { google } from "@ai-sdk/google";
 import { streamText, type ModelMessage } from "ai";
-import { experiences } from "../data/experience";
+import { experiencesContext } from "../data/experience";
 
 // Allow streaming responses up to 30 seconds (Vercel hobby tier max)
 export const maxDuration = 30;
@@ -16,7 +16,7 @@ Speak in first person ("I", "my") as if you ARE Jun Kai. Be casual but professio
 - Interested in: AI-powered apps, developer tools, clean UX, building things end-to-end
 
 ## My experience
-${JSON.stringify(experiences, null, 2)}
+${JSON.stringify(experiencesContext, null, 2)}
 
 ## Contact
 - Email: hengjunkai@gmail.com
