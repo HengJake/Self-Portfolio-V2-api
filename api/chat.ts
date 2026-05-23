@@ -1,6 +1,6 @@
 import { google } from "@ai-sdk/google";
 import { streamText, type ModelMessage } from "ai";
-import { experiences } from "./data/experience";
+import { experiences } from "../data/experience";
 
 // Allow streaming responses up to 30 seconds (Vercel hobby tier max)
 export const maxDuration = 30;
